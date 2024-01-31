@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Styles and meta tags -->
+</head>
+
+<body>
+
+  <div class="header">
+    <!-- Header content -->
+  </div>
+
+  <div class="content">
+
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <div>
+          <label>Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label>Email:</label>
+          <input type="email" id="email">
+        </div>
+        <div>
+          <label>Mobile:</label>
+          <input type="tel" id="mobile">
+        </div>
+        <div>
+          <label>Message:</label>
+          <textarea id="message"></textarea>
+        </div>
+      </form>
+    </div>
+
+    <div class="buttons">
+      <button onclick="showAddForm()">Add Form</button>
+      <button onclick="sendWhatsAppMsg()">Send Message</button>
+    </div>
+
+  </div>
+
+  <div id="addForm"></div>
+
+  <script>
+
+    function getFormData() {
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let mobile = document.getElementById('mobile').value;
+      let message = document.getElementById('message').value;
+
+      return {
+        name, 
+        email,
+        mobile,
+        message  
+      };
+    }
+
+    function sendWhatsAppMsg() {
+      let formData = getFormData();
+      let msg = `Name: ${formData.name} 
+Email: ${formData.email}
+Mobile: ${formData.mobile}  
+Message: ${formData.message}`;
+
+      let phone = '6360630163';
+      let url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(msg);  
+      window.open(url);    
+    }
+
+  </script>
+
+</body>
+</html>

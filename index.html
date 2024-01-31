@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+
+  <style>
+    /* Styles */
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="logo">
+      <h1>KODE MAPA</h1>
+    </div>
+
+    <div class="top-right">
+      <a href="./home.html">HOME</a>
+      <a href="./aboutus.html">ABOUT US</a>  
+      <a href="./contact.html">CONTACT</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="ourservices">
+    <div class="our">
+      <h1>OUR SERVICES</h1>
+    </div>
+
+    <div class="three">
+      <button>button1</button>
+      <button>button2</button>
+      <button onclick="showAddNew()">ADD NEW</button> 
+    </div>
+
+  </div>
+  
+ 
+    <div ng-if="flag">
+        <h1>ADD NEW</h1>
+        <p>PRODUCT:</p>
+        <input type="text">
+        <p>PRICE:</p>
+        <input type="text">
+        <button>SUBMIT</button>
+    </div>
+
+ 
+
+
+</body>
+</html>
