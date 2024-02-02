@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="mycontroller" lang="en">
+<head>
+    <script type="text/javascript" src="./lib/angular.min.js"></script>
+    <script type="text/javascript" src="./src/contoller/controller.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>  
+        h1{
+            display:inline;
+        }
+        body{
+            background-color:rgba(199, 213, 108, 0.745);
+        }
+        .products{
+            color:black;
+        }
+        .products,img{
+            height:300px;
+            width:300px;
+            margin:10px;
+        }
+        .products,p{
+            text-align:center;
+        }
+        .contact-button{
+            border-radius:5px;
+            background-color:aqua;
+            text-decoration:none;
+        }
+        .startlinks,a{
+            text-decoration:none;
+            position:relative;
+            left:370px;
+            margin:5px;
+        }
+        header{
+            height:70px;
+            padding-top:25px;
+        }
+        .cafe{
+            position:relative;
+            left:25px;
+        }
+        .cafe,h1{
+            margin:5px;
+        }
+        .products,a{
+            position:relative;
+            right:70px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color:black">
+        <span class="cafe">
+            <h1 style="color:white">CAFE</h1>
+            <h1 style="color:white">ZONE</h1>
+        </span>
+        <span>
+            <nav style="display:inline" class="startlinks">
+                <a href="#" style="color:white">home</a>
+                <a href="#" style="color:white">about us</a>
+                <a href="#" style="color:white">contact us</a>
+            </nav>
+        </span>
+    </header>
+    <table class="container">
+        <tr>
+            <td class="left-column">
+                <img src="./cofee.jpeg" alt="cafe image" class="headerimage">
+            </td>
+            <td class="right-column">
+                <h1 class="heading">welcome to cafe delight</h1>
+                <p class="tagline">discover the best cofee and pastries in town!</p>
+                <a href="./contactus.html" class="contact-button">contact us</a>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table class="products">
+        <tr>
+            <td>
+                <img src="./prod1.jpeg" alt="prod1">
+                <p>PRODUCT 1</p>
+                <p>$ 15.00</p>
+                <a href="./buynow.html">BUY NOW</a>
+            </td>
+            <td>
+                <img src="./prod2.jpeg" alt="prod2">
+                <p>PRODUCT 2</p>
+                <p>$ 20.00</p>
+                <a href="./buynow.html">BUY NOW</a>
+            </td>
+            <td>
+                <img src="./prod3.jpeg" alt="prod3">
+                <p>PRODUCT 3</p>
+                <p>$ 22.00</p>
+                <a href="./buynow.html">BUY NOW</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./prod4.jpeg" alt="prod4">
+                <P>PRODUCT 4</P>
+                <P>$ 24.00</P>
+                <a href="./buynow.html">BUY NOW</a>
+            </td>
+            <td>
+                <img src="./prod5.jpeg" alt="prod5">
+                <p>PRODUCT 5</p>
+                <P>$ 25.OO</P>
+                <a href="./buynow.html">BUY NOW</a>
+            </td>
+            <td>
+                <img src="./prod6.jpeg" alt="prod6">
+                <p>PRODUCT 6</p>
+                <p>$ 26.00</p>
+                <a href="./buynow.html">BUY NOW</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
